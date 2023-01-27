@@ -1,0 +1,110 @@
+html {
+    margin: 10px;
+}
+
+body {
+    background-color: darksalmon;
+    width: 100%;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.our-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 60%;
+    min-height: 100%;
+    border-radius: 15px;
+    display: block;
+    margin: 20vh auto;
+    background-color: #fff;
+}
+
+.our-card .our-card-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+}
+
+.our-card-header .heading-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: auto;
+}
+
+.our-card .our-card-body {
+    padding: 0px 20px 10px 20px;
+    padding: 30px;
+}
+
+.our-card-body .form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.form-row .form-input {
+    border: 0px;
+    border-bottom: 1px solid lightgray;
+    display: block;
+    outline: none;
+    height: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+
+}
+
+.form-row .form-input:hover {
+    border-bottom: 1px solid blue;
+    background-color: 1px solid rgb(159, 23, 112);
+}
+
+.form-row .form-input:focus {
+    border-bottom: 1px solid rgb(10, 120, 19);
+    background-color: rgb(226, 239, 237);
+}
+
+
+.form-row .form-input:invalid {
+    border-bottom: 1px solid red;
+    background-color: rgb(245, 198, 198);
+}
+
+
+.our-card-body label {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: .3rem;
+
+}
+
+
+.form-row .form-submit {
+    background: linear-gradient(to top, rgb(252, 6, 186)10%, rgb(238, 36, 113)50%);
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    border-radius: 35px;
+    outline: none;
+    color: white;
+    border: 0;
+    font-size: 1.3rem;
+}
+
+.form-row .form-submit:hover {
+    background: linear-gradient(to top, rgb(252, 6, 186)10%, rgb(198, 36, 238)50%);
+    cursor: pointer;
+    box-shadow: 1px 1px 20px 1px gray;
+}
+
+@media screen and (max-width: 992px){
+    body{
+        margin:0px
+    }
+    .our-card {
+        width: 100%;
+        left:0;
+        right: 0;
+    }
+}

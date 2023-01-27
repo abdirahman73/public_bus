@@ -1,0 +1,63 @@
+.align-center {
+    justify-content: center  !important;
+    text-align: center !important;
+    margin: auto;
+}
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.row:not(:last-child) {
+    margin-bottom: 0.8rem
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.row [class^="col-"] {
+    float: left;
+}
+
+.row [class^="col-"]:not(:last-child) {
+    margin-right: 1rem;
+}
+
+
+@media only screen and (max-width: 48rem) {
+    .row {
+        max-width: 45rem;
+        padding: 0 0;
+    }
+
+    .row [class^="col-"]:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .row [class^="col-"] {
+        width: 100% !important;
+    }
+}
+
+
+
+.row .col-one {
+    width: calc((100% - 1rem))
+}
+
+.row .col-two {
+    width: calc((100% - 2rem) / 2)
+}
+
+.row .col-three {
+    width: calc((100% - 3rem) / 3)
+}
+
+.row .col-four {
+    width: calc((100% - 4rem) / 4)
+}

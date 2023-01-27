@@ -1,0 +1,16 @@
+{
+  "name": "hotelms",
+  "version": "1.0.0",
+  "description": "Waa app caan caan dhalay oo casri ah looguna talagalay hotels ka dalka in lagu maamulo ee halala socdo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "tusbahle",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  }
+}
